@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormCadastro">
+//Texto cadastre-se
+    <TextView
+        android:id="@+id/text_cadastre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_cadastro"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    //caixa de texto nome completo
+    <EditText
+        android:id="@+id/nome_cadastro"
+        style="@style/Edit_Text_cadastro"
+        android:inputType="text"
+        android:hint="Digite seu nome completo"
+        app:layout_constraintTop_toBottomOf="@id/text_cadastre"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    //caixa de texto CPF
+    <EditText
+        android:id="@+id/cpf_cadastro"
+        style="@style/Edit_Text_cadastro"
+        android:inputType="number"
+        android:hint="Digite o seu CPF"
+        android:layout_marginTop="130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    //caixa de texto data de nascimento
+    <EditText
+        android:id="@+id/data_nascimento"
+        style="@style/Edit_Text_cadastro"
+        android:inputType="datetime"
+        android:hint="Digite sua data de nascimento"
+        android:layout_marginTop="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    //caixa de texto número de celular
+    <EditText
+        android:id="@+id/num_celular"
+        style="@style/Edit_Text_cadastro"
+        android:inputType="phone"
+        android:hint="Digite seu número de celular"
+        android:layout_marginTop="230dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    //Texto dados de login
+    <TextView
+        android:id="@+id/text_dados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_dados"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="290dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    //caixa de texto cadastrar email
+    <EditText
+        android:id="@+id/cadastre_email"
+        style="@style/Edit_Text_cadastro"
+        android:inputType="textEmailAddress"
+        android:hint="Digite seu Email"
+        android:layout_marginTop="360dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    //caixa de texto digite a senha
+    <EditText
+        android:id="@+id/cadastre_senha"
+        style="@style/Edit_Text_cadastro"
+        android:inputType="textWebPassword"
+        android:hint="Digite uma senha"
+        android:layout_marginTop="410dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    //Caixa de texto confirme a senha
+    <EditText
+        android:id="@+id/confirme_senha"
+        style="@style/Edit_Text_cadastro"
+        android:inputType="textWebPassword"
+        android:hint="confirme sua senha"
+        android:layout_marginTop="460dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    //Botão cadastrar
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confirme_cadastro"
+        style="@style/Button"
+        android:text="Cadastrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirme_senha"
+        android:layout_marginTop="30dp"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

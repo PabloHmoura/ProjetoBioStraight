@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "498085152620",
+    "project_id": "projeto-biostraight",
+    "storage_bucket": "projeto-biostraight.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498085152620:android:13fceb7b38622d52225549",
+        "android_client_info": {
+          "package_name": "com.example.projetoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498085152620-dnm2dopkj14ukkhpmpkd8f9kptvncif4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbUWpXXLGkwuNhbTprQUjev9uN1UY5qgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498085152620-dnm2dopkj14ukkhpmpkd8f9kptvncif4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

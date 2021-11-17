@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>AndroidManifest.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+AndroidManifest.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s0">&lt;manifest </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">package</span><span class="s2">=&quot;com.example.projetoapp&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;application</span>
+        <span class="s1">android:allowBackup</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:icon</span><span class="s2">=&quot;@mipmap/ic_launcher&quot;</span>
+        <span class="s1">android:label</span><span class="s2">=&quot;@string/app_name&quot;</span>
+        <span class="s1">android:roundIcon</span><span class="s2">=&quot;@mipmap/ic_launcher_round&quot;</span>
+        <span class="s1">android:supportsRtl</span><span class="s2">=&quot;true&quot;</span>
+        <span class="s1">android:theme</span><span class="s2">=&quot;@style/Theme.ProjetoApp&quot;</span><span class="s0">&gt;</span>
+        <span class="s0">&lt;activity</span>
+            <span class="s1">android:name</span><span class="s2">=&quot;.TelaPrincipal&quot;</span>
+            <span class="s1">android:exported</span><span class="s2">=&quot;false&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;activity</span>
+            <span class="s1">android:name</span><span class="s2">=&quot;.FormCadastro&quot;</span>
+            <span class="s1">android:exported</span><span class="s2">=&quot;false&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;activity</span>
+            <span class="s1">android:name</span><span class="s2">=&quot;.MainActivity&quot;</span>
+            <span class="s1">android:exported</span><span class="s2">=&quot;false&quot; </span><span class="s0">/&gt;</span>
+        <span class="s0">&lt;activity</span>
+            <span class="s1">android:name</span><span class="s2">=&quot;.FormLogin&quot;</span>
+            <span class="s1">android:exported</span><span class="s2">=&quot;true&quot;</span><span class="s0">&gt;</span>
+            <span class="s0">&lt;intent-filter&gt;</span>
+                <span class="s0">&lt;action </span><span class="s1">android:name</span><span class="s2">=&quot;android.intent.action.MAIN&quot; </span><span class="s0">/&gt;</span>
+
+                <span class="s0">&lt;category </span><span class="s1">android:name</span><span class="s2">=&quot;android.intent.category.LAUNCHER&quot; </span><span class="s0">/&gt;</span>
+            <span class="s0">&lt;/intent-filter&gt;</span>
+        <span class="s0">&lt;/activity&gt;</span>
+    <span class="s0">&lt;/application&gt;</span>
+
+<span class="s0">&lt;/manifest&gt;</span></pre>
+</body>
+</html>
