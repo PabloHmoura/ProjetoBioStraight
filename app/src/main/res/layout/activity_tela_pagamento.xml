@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TelaPagamento">
+
+    <TextView
+        android:id="@+id/text_insira"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insira os dados do cartão de crédito"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:padding="50dp"
+        android:background="@drawable/background"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/card_number"
+        style ="@style/Edit_Text_cadastro"
+        android:background="@color/white"
+        android:hint="Digite o número do cartão"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+        />
+
+    <EditText
+        android:id="@+id/card_name"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:hint="Digite o nome impresso no cartão"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="280dp"
+        />
+    <EditText
+        android:id="@+id/card_cvv"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:hint="CVV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_name"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="150dp"/>
+
+    <EditText
+        android:id="@+id/card_vencimento"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:hint="Vencimento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_name"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="150dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_pagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Efetuar pagamento"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/green_main"
+        android:backgroundTint="@color/white"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_cvv"
+        />
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

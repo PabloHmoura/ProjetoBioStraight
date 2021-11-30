@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoApp">
         <activity
+            android:name=".TelaPagamento"
+            android:exported="false" />
+        <activity
             android:name=".TelaPrincipal"
             android:exported="false" />
         <activity

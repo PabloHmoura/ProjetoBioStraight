@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class FormLogin extends AppCompatActivity {
 
@@ -57,12 +58,12 @@ public class FormLogin extends AppCompatActivity {
                     snackbar.setTextColor(Color.BLACK);
                     snackbar.show();
                 }else {
-                    AuntenticarUsuario();
+                    AuntenticarUsuario(v);
                 }
             }
         });
     }
-    private void AuntenticarUsuario(){
+    private void AuntenticarUsuario(View view){
 
         String email = edit_email.getText().toString();
         String senha = edit_senha.getText().toString();
@@ -80,10 +81,33 @@ public class FormLogin extends AppCompatActivity {
                             TelaPrincipal();
                         }
                     },3000);
+                }else {
+                    String erro;
+
+                    try {
+                        throw task.getException();
+                    }catch (Exception e){
+                        erro = "Erro ao logar usuário";
+                    }
+                    Snackbar snackbar = Snackbar.make(view, erro, Snackbar.LENGTH_LONG);
+                    snackbar.setBackgroundTint(Color.WHITE);
+                    snackbar.setTextColor(Color.BLACK);
+                    snackbar.show();
                 }
             }
         });
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        FirebaseUser usuarioAtual = FirebaseAuth.getInstance().getCurrentUser();
+
+        if (usuarioAtual != null){
+            TelaPrincipal();
+        }
     }
 
     private void TelaPrincipal(){

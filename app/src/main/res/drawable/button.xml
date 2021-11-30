@@ -8,4 +8,5 @@
             android:endColor="@color/green_end"
             android:angle="100"
         />
+
 </shape>
